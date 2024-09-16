@@ -255,13 +255,20 @@ justify-content: center;
   text-transform: uppercase;
   font-weight: 800;
   text-decoration: none;
+
+  transition: var(--transition-duration);
 }
 
 .social-link:hover { 
   color: violet;
 }
 
+.social-link:active { 
+  color: #f80aec;
+}
+
 .social-link-number { 
+  color: var(--color-white);
   font-size: 83px;
   padding-right: 50px;
 }
