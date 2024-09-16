@@ -203,7 +203,6 @@ body {
 .join-us-right { 
 max-width: 420px;
 margin: 40px 110px 40px 0;
-border: 1px solid tomato;
 width: 50%;
 text-align: center;
 justify-content: center;
@@ -217,4 +216,52 @@ justify-content: center;
 .join-us-subtitle {
   font-size: 39px;
   text-transform: uppercase ;
+}
+
+.social { 
+  background-color: var(--color-dark);
+  padding-top: 40px;
+  padding-bottom: 45px;
+}
+
+.social-title { 
+  margin-bottom: 45px;
+  color: var(--color-white);
+  font-size: 55px;
+  font-family: var(--font-family-base);
+  text-transform: uppercase;
+  font-weight: 800;
+  
+}
+
+.social-list { 
+  display: flex;
+  column-gap: 10px;
+  justify-content: space-between;
+}
+
+.social-item { 
+  display: flex;
+}
+
+.social-link { 
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 30px;
+  color: var(--color-white);
+  font-size: 30px;
+  font-family: var(--font-family-base);
+  text-transform: uppercase;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.social-link:hover { 
+  color: violet;
+}
+
+.social-link-number { 
+  font-size: 83px;
+  padding-right: 50px;
 }
