@@ -272,3 +272,62 @@ justify-content: center;
   font-size: 83px;
   padding-right: 50px;
 }
+
+.portfolio { 
+
+}
+
+.portfolio-block-image { 
+  display: grid;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  grid-template-columns: repeat(3, 420px);
+  grid-template-rows: repeat(3, 280px);
+  grid-template-areas: 
+          "wide1 wide1 wide2"
+          "product1 product1 wide2"
+          "product2 product2 product2";
+}
+
+.card-image { 
+  background-color: bisque;
+}
+
+.image-left {grid-area: wide1;}
+.image-right {grid-area: wide2;}
+
+.image-left-button {grid-area: product1;}
+.image-button {grid-area: product2}
+
+.image-left { 
+   background: url(/Styles/Image-left-1.svg);
+   background-size: 200%;
+}
+
+.image-right { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/Styles/image-right-3.svg);
+  background-size: 100%;
+}
+
+.portfolio-subtitle { 
+  font-size: 30px;
+  color: var(--color-white);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: var(--font-family-base);
+ 
+}
+
+.image-left-button {
+  background: url(/Styles/image-left-2.svg);
+  background-size: 120%;
+}
+
+.image-button { 
+  background: url(/Styles/image-bottom.svg) no-repeat;
+  background-size: 100%;
+}
