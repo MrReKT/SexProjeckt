@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
+/* * {
+  outline: 4px solid green !important;
+} */
+
 .montserrat {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -119,8 +123,14 @@
    }
  }
 
-p {
-  margin: 0;
+p, a{
+  margin: 0px;
+}
+
+
+
+h2 { 
+  margin: 0px;
 }
 
 :root {
@@ -147,6 +157,7 @@ body {
 }
 
 .header {
+  max-width: 100%;
   background-color: var(--color-dark);
 }
 
@@ -274,7 +285,7 @@ justify-content: center;
 }
 
 .portfolio { 
-
+  max-width: 100%;
 }
 
 .portfolio-block-image { 
@@ -293,7 +304,6 @@ justify-content: center;
 
 .card-image { 
   background-color: bisque;
-  
 }
 
 .image-left {grid-area: wide1;}
@@ -307,35 +317,98 @@ justify-content: center;
    background-size: 200%;
 }
 
+.image-one { 
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .image-right { 
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(/Styles/image-right-3.svg);
+  overflow: hidden;
+  background: no-repeat;
   background-size: 100%;
+
 }
 
-.portfolio-subtitle { 
+.image-three { 
+  height: 100%;
+  width: 100%;
+  filter: blur(10px);
+  object-fit: none;
+}
+
+.portfolio-subtitle {
+  
+  position: absolute; 
   font-size: 30px;
   color: var(--color-white);
   text-transform: uppercase;
   text-decoration: none;
   font-family: var(--font-family-base);
- 
+}
+
+.portfolio-text { 
+  
+  position: relative;
 }
 
 .image-left-button {
-  background: url(/Styles/image-left-2.svg);
+  background-position: center;
   background-size: 120%;
+}
+
+.image-two {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .image-button { 
   height: 150px;
   background: url(/Styles/image-bottom.svg) no-repeat;
-
 }
 
 .footer { 
   background-color: var(--color-dark);
   color: var(--color-white);
+  padding-top: 40px;
+}
+
+.footer-left-side { 
+  display: inline-block;
+}
+
+.footer-text { 
+  max-width: 100%;
+}
+
+.footer-title { 
+  padding-top: 20px;
+  font-size: 14px;
+  font-family: var(--font-family-base);
+}
+
+.footer-social { 
+  padding-top: 40px;
+}
+
+.footer-social-list { 
+  display: flex;
+  align-items: center;
+  gap: 20px
+}
+
+.footer-right-side { 
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.footer-menu-list { 
+  color: var(--color-white);
+  font-family: var(--font-family-base);
+  font-size: 15px;
 }
